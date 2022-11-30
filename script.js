@@ -90,6 +90,5 @@ function writePassword() {
   passwordText.value = password;
 }
 
-writePassword();
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
