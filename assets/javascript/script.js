@@ -35,7 +35,7 @@ function generatePassword() {
     userSpecialCharacters = window.confirm("Click OK to confirm including special characters.");
       if (userSpecialCharacters) {  
         passwordCharset = passwordCharset.concat(specialCharacters);
-      } else if (!userSpecialCharacters) {
+      } else {
         return;
       }
   }
@@ -44,7 +44,7 @@ function generatePassword() {
     userNumericCharacters = window.confirm("Click OK to confirm including numeric characters.");
       if (userNumericCharacters) {
         passwordCharset = passwordCharset.concat(numericCharacters);
-      } else if (!userNumericCharacters) {
+      } else {
         return;
       } 
   }
@@ -53,7 +53,7 @@ function generatePassword() {
     userLowerCasedCharacters = window.confirm("Click OK to confirm including lowercase characters.");
     if (userLowerCasedCharacters) {
       passwordCharset = passwordCharset.concat(lowerCasedCharacters);
-    } else if (!userLowerCasedCharacters) {
+    } else {
       return;
     }
   }
@@ -62,7 +62,7 @@ function generatePassword() {
     userUpperCasedCharacters = window.confirm("Click OK to confirm including uppercase characters.");
     if (userUpperCasedCharacters) {
       passwordCharset = passwordCharset.concat(upperCasedCharacters);
-    } else if (!userUpperCasedCharacters) {
+    } else {
       return;
     }
   }
